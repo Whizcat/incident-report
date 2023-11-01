@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
 <style>
 canvas {
     border:1px solid #d3d3d3;
@@ -19,11 +20,14 @@ function startGame() {
     myGameArea.start();
 }
 
+
+
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = 480;
         this.canvas.height = 270;
+        
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.interval = setInterval(updateGameArea, 20);        
@@ -117,11 +121,42 @@ new Chart("myChart", {
   options: {
     title: {
       display: true,
-      text: "World Wide Wine Production 2018"
+      text: "University cohort with inactive accounts"
     }
   }
 });
 </script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>Log an incident quiery by flagging the trend</h1>
+
+<p>Movement trend should be duly captured for Audit purposes each month : NB- Monthly!</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+
 
 </body>
 </html>
